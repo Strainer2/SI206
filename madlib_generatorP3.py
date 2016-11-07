@@ -3,6 +3,7 @@
 import nltk # requires some downloading/installing dependencies to use all its features; numpy is especially tricky to install
 import random
 #JOHN Strainer
+#this shit blows
 # import nltk
 nltk.download('punkt')
 
