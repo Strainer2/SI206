@@ -2,7 +2,7 @@
 # further revised by Colleen van Lent for Python3
 import nltk # requires some downloading/installing dependencies to use all its features; numpy is especially tricky to install
 import random
-
+#JOHN Strainer
 # import nltk
 nltk.download('punkt')
 
