@@ -1,12 +1,11 @@
 # code developed by Jackie Cohen; revised by Paul Resnick
 # further revised by Colleen van Lent for Python3
-import nltk # requires some downloading/installing dependencies to use all its features; numpy is especially tricky to install
-import random
-#JOHN Strainer
-#this shit blows
-# import nltk
+import nltk 
+from  nltk.book import *
+from nltk import bigrams
+from nltk.tokenize import sent_tokenize, word_tokenize
 nltk.download('punkt')
-
+#vote trump
 from nltk import word_tokenize,sent_tokenize
 
 debug = False #True
@@ -14,7 +13,7 @@ debug = False #True
 # get file from user to make mad lib out of
 if debug:
 	print ("Getting information from file madlib_test.txt...\n")
-fname = "madlibtest2.txt" # need a file with this name in directory
+fname = text2 # need a file with this name in directory
 
 f = open(fname, 'r')
 para = f.read()
