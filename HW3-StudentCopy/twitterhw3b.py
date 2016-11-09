@@ -7,6 +7,6 @@
 
 # Be prepared to change the search term during demo.
 
-
+#thinking about how to access all of the public tweets
 print("Average subjectivity is")
 print("Average polarity is")
