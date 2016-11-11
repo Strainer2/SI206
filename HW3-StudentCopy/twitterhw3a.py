@@ -21,7 +21,7 @@ auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
 
 newapi = tweepy.API(auth)
-img = "/Users/JBone/documents/Fall 2016/SI 206/clinton.jpg" 
+img = "/Users/JBone/documents/cool.jpg" 
 print("Posting...")
 newapi.update_with_media(img, status="#UMSI-206 #Proj3")
 print("Posted")

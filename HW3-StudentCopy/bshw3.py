@@ -12,17 +12,6 @@
 # Make sure the new page is uploaded to your GitHub account.
 # Use https://www.si.umich.edu/programs/bachelor-science-information/bsi-admissions
 
-# STEPS 
-# Create a similar HTML file but 
-# 1) Replace every occurrence of the word “student” with “AMAZING
-# student.”  
-# 2) Replace the main picture with a picture of yourself.
-# 3) Replace any local images with the image I provided in media.  (You
-# must keep the image in a separate folder than your html code.
-
-# Deliverables
-# Make sure the new page is uploaded to your GitHub account.
-#analyze last three lines
 
 import requests
 import re
@@ -48,9 +37,9 @@ for link in soup.findAll('iframe'):
 
 ### Part 3
 for img in soup.findAll('img'):
-	img['src'] = "/Users/JBone/documents/Fall 2016/SI 206/SI206/Homework3/media/logo.png"
+	img['src'] = "/Users/JBone/documents/Fall 2016/SI 206/SI206/HW3-StudentCopy/media/logo.png"
 
-text_file = open("Hw3Soup.html", "w")
+text_file = open("Hw3Soupnew.html", "w")
 print('Outputting html file....')
 text_file.write(str(soup))
 text_file.close()
