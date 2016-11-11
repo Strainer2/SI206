@@ -23,6 +23,7 @@
 # Deliverables
 # Make sure the new page is uploaded to your GitHub account.
 #analyze last three lines
+
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -41,3 +42,16 @@ for word in student:
     fixed_text = str(word).replace('student', 'AMAZING student')
     word.replace_with(fixed_text)
 
+## Part 2 
+for link in soup.findAll('iframe'):
+	link['src'] = "/Users/JBone/documents/soccer.jpg"
+
+### Part 3
+for img in soup.findAll('img'):
+	img['src'] = "/Users/JBone/documents/Fall 2016/SI 206/SI206/Homework3/media/logo.png"
+
+text_file = open("Hw3Soup.html", "w")
+print('Outputting html file....')
+text_file.write(str(soup))
+text_file.close()
+print('Done')
